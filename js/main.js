@@ -1082,11 +1082,13 @@ $(function () {
                 body: formData
             }).then(response => response.json())
             .then(data => {
+                console.log("Response from server:", data);
                 if (data.result === "success") {
                     form.style.display = "none";
-                    successMessage.style.display = "block";
                     form.reset();
+                    successMessage.style.display = "block";
                 } else {
+                    form.reset();
                     errorMessage.style.display = "block";
                     console.error(data);
                 }
