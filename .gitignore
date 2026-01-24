@@ -1,0 +1,76 @@
+# ===============================
+# OS / System files
+# ===============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===============================
+# Editor / IDE files
+# ===============================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ===============================
+# Node / Package managers
+# ===============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===============================
+# Build output
+# ===============================
+dist/
+build/
+public/build/
+
+# ===============================
+# Compiled CSS (optional)
+# Ignore if SCSS is source of truth
+# ===============================
+*.css.map
+
+# Uncomment if you DON'T want compiled CSS tracked
+# *.css
+
+# ===============================
+# Sass cache
+# ===============================
+.sass-cache/
+.cache/
+*.scssc
+
+# ===============================
+# Environment variables
+# ===============================
+.env
+.env.local
+.env.development
+.env.production
+
+# ===============================
+# Temporary files
+# ===============================
+*.log
+*.tmp
+*.temp
+
+# ===============================
+# Coverage / testing
+# ===============================
+coverage/
+
+# ===============================
+# Misc
+# ===============================
+*.bak
+*.swp
+*~
+prepros.config
