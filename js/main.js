@@ -1080,13 +1080,17 @@ $(function () {
             await fetch("https://script.google.com/macros/s/AKfycbxIXsCckRoyANBm41H5nz8H3AKVLAHsTupoCbSlBtkTNq8mnZA6NJLynks3hkX59AOR/exec", {
                 method: "POST",
                 body: formData
+            }).then(response => response.json())
+            .then(data => {
+                if (data.result === "success") {
+                    form.style.display = "none";
+                    successMessage.style.display = "block";
+                    form.reset();
+                } else {
+                    errorMessage.style.display = "block";
+                    console.error(data);
+                }
             });
-
-            // ⏱ Allow Apps Script time to write to Sheets
-            setTimeout(() => {
-                successMessage.style.display = "block";
-                form.reset();
-            }, 500);
 
         } catch (err) {
             errorMessage.style.display = "block";
