@@ -1077,9 +1077,8 @@ $(function () {
 
         try {
             console.log("Submitting form data:", (formData.entries()));
-            await fetch("https://script.google.com/macros/s/AKfycbwHh4CWci46Qyizz2gagRO6mJwF__genoRgix4JBMJbuAOVL-QZpYkk3UuiUErvG9c2/exec", {
+            await fetch("https://script.google.com/macros/s/AKfycbxIXsCckRoyANBm41H5nz8H3AKVLAHsTupoCbSlBtkTNq8mnZA6NJLynks3hkX59AOR/exec", {
                 method: "POST",
-                mode: "no-cors",
                 body: formData
             });
 
