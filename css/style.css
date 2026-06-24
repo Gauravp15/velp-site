@@ -799,6 +799,10 @@ spaces
   margin-bottom: 30px;
 }
 
+.mil-mb-50 {
+  margin-bottom: 50px;
+}
+
 .mil-mb-60 {
   margin-bottom: 60px;
 }
@@ -2306,6 +2310,9 @@ social icons
   color: rgb(255, 255, 255);
   font-size: 18px;
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+}
+.mil-team .mil-social-icons li a {
+  color: inherit;
 }
 .mil-social-icons li a:hover {
   color: rgb(99, 0, 198);
