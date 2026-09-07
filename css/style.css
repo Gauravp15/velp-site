@@ -1995,6 +1995,10 @@ partners
 .mil-partner-frame img {
   width: 100%;
 }
+.partners .swiper-wrapper{
+  display: flex;
+  align-items: center;
+}
 
 /* -------------------------------------------
 
